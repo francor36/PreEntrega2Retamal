@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* ingreso fuentes de la pc*/
+@font-face {
+    font-family: 'CedarvilleCursive-Regular';
+    src: url('../assent/font/CedarvilleCursive-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Satisfy-Regular';
+    src: url('../assent/font/Satisfy-Regular.ttf');
+}
+
+/* cambio color a la etiqueta main*/
+main {
+    background-color: antiquewhite;
+
+}
+
+/*cambio fuente y tamaño*/
+h1 {
+    font-family: Satisfy-Regular;
+    font-size: 35px;
+}
+
+/*modifico la fuente, el color y el efecto de letras*/
+nav ul li a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-family: Satisfy-Regular;
+    font-size: 25px;
+
+
+}
+
+/*modifico tamaño de mi nav, cambio color*/
+nav {
+    width: 100%;
+    height: 9vh;
+    position: fixed;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background-color: rgb(221, 192, 154);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+@media  (max-width: 800px) {
+    nav{
+
+        flex-direction: row;
+        height: 15vh;
+
+    }
+}
+@media  (max-width: 400px) {
+    nav{
+
+        flex-direction: row;
+        height: 20vh;
+        align-items: center;
+
+    }
+}
+
+/*digo que este en linea y bloques modificando el espacio*/
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/*agrego un colo al pasar por un hipervinvulo*/
+a:hover {
+    color: darkslategrey;
+}
+
+/*foto del incio*/
+.contenedor {
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assent/img/voguees_moda_tendencias_23394152_zna2xg.jpg);
+}
+
+/*Alineo el texto cambio color y tamaño*/
+.subtitulo {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Satisfy-Regular;
+    font-size: 35px;
+}
+
+.reciente{
+    display: flex;
+    justify-content: center;
+}
+    
+/*creo cuadrados de 400px con una altura de 400px*/
+.reciente div {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 3px;
+    border: solid 1px #000000;
+}
+
+/*le agrego fotos al cuadrado*/
+.reciente .fotou {
+    background-image: url(../assent/img/BuzoNuevo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.reciente .fotod {
+    background-image: url(../assent/img/buzo-de-mujer-agnes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.reciente .fotot {
+    background-image: url(../assent/img/1648163732383oversize.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.subtitulod {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Satisfy-Regular;
+    font-size: 35px;
+}
+
+
+/*creo cuadrados de 400px con una altura de 400px*/
+.destacado{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:800px) {
+    .destacado {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.destacado div {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 3px;
+    border: solid 1px #000000;
+
+}
+
+/*le agrego fotos al cuadrado*/
+.destacado .fotou {
+    background-image: url(../assent/img/tendencias-que-se-haran-grandes-invierno-2022-9-1641033819.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destacado .fotod {
+    background-image: url(../assent/img/SEB_4191-copy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destacado .fotot {
+    background-image: url(../assent/img/prendas-no-pueden-faltar-armario-2-XxXx80.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*el footer, le cambio el color y le doy tamaño*/
+footer {
+
+    line-height: 50px;
+    background-color: rgb(221, 192, 154);
+    width: 100%;
+}
+
+/*la calse pie de la etiqueta p cambio fuente y color*/
+.pie p {
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.contenido {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+/*agrego el alineado del mapa*/
+.mapa {
+    text-align: center;
+}
+
+.contacto {
+    text-align: center;
+
+}
+
+.texto {
+    text-align: center;
+}
+
+/*agrego una imagen con el alto y ancho, donde no se repite*/
+.somos {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assent/img/afecta-mascota-llegada-otono_1614749167_144505687_1200x675.jpg);
+}
+
+/*centrado*/
+.nosotros {
+    text-align: center;
+}
+
+/*modifico la etiqueta img*/
+img {
+
+    background-repeat: no-repeat;
+    background-position: absolute;
+    overflow: cover;
+    width: 80%;
+    height: 60vh;
+}
+
+/*alineo la etiqueta table*/
+table {
+    text-align: center;
+}
+
+/*centrado*/
+.Descuento {
+    text-align: center;
+}
+
+.fondo {
+    height: 100vh;
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 210px 210px;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 50px 20px;
+}
+@media (max-width: 800px){
+    .reciente{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 800px){
+    .pie{
+        width: 100%;
+        line-height: 50px;
+        background-color: rgb(221, 192, 154);
+        width: 100%;
+    }
+}
+.centro{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.ou{
+background-size: cover;
+background-position: center;
+}
+.od{
+
+}
+.ot{
+
+}
